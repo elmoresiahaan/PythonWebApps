@@ -5,25 +5,25 @@ class IndexView(TemplateView):
     template_name = 'heroes.html'
 
 
-class SpidermanView(TemplateView):
+class IchigoView(TemplateView):
     template_name = 'hero.html'
 
     def get_context_data(self, **kwargs):
         return {
-            'title': 'Spiderman',
-            'body': 'My name is Peter Parker',
-            'image': '/static/images/spiderman.jpg'
+            'title': 'Ichigo Kurosaki',
+            'body': 'My name is Ichigo Kurasaki.',
+            'image': '/static/images/ichigo.jpg'
         }
 
 
-class CaptainAmericaView(TemplateView):
+class LuffyView(TemplateView):
     template_name = "hero.html"
 
     def get_context_data(self, **kwargs):
         return {
-            'title': 'Captain America',
-            'body': 'My name is Captain America',
-            'image': '/static/images/capamerica.jpg'
+            'title': 'Monkey D. Luffy',
+            'body': 'My name is Luffy and I will become the Pirate King.',
+            'image': '/static/images/luffy.jpg'
         }
 
 
@@ -33,6 +33,6 @@ class NarutoView(TemplateView):
     def get_context_data(self, **kwargs):
         return {
             'title': 'Naruto Uzumaki',
-            'body': 'My name is Naruto Uzumaki',
+            'body': 'My name is Naruto Uzumaki.',
             'image': '/static/images/naruto.jpg'
         }
