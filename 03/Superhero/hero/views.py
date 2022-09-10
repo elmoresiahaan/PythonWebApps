@@ -11,7 +11,7 @@ class IchigoView(TemplateView):
     def get_context_data(self, **kwargs):
         return {
             'title': 'Ichigo Kurosaki',
-            'body': 'My name is Ichigo Kurasaki.',
+            'body': 'My name is Ichigo and I will protect my loved ones.',
             'image': '/static/images/ichigo.jpg'
         }
 
@@ -33,6 +33,6 @@ class NarutoView(TemplateView):
     def get_context_data(self, **kwargs):
         return {
             'title': 'Naruto Uzumaki',
-            'body': 'My name is Naruto Uzumaki.',
+            'body': 'My name is Naruto and I will become the Hokage.',
             'image': '/static/images/naruto.jpg'
         }
