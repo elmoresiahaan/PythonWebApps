@@ -13,15 +13,25 @@
 
 <body class=" bg-dark text-light">
 
-    <header class="bg-primary p-5 mb-5">
-        <h1>Hero Database</h1>
-        <h2>Data Views Application</h2>
+    <header class="bg-danger p-5 mb-5">
+        <div class="row">
+            <div class="col-11">
+                <h1>Hero Database</h1>
+            </div>
+            <div class="col">
+                <a href="/" class="btn btn-dark">Home</a>
+            </div>
+        </div>
+        <div class="row">
+            <h2>Data Views Application</h2>
+        </div>
+
     </header>
 
     <div class="container m-5">
         <div class="card bg-light text-dark p-5">
 
-            <h1 class="text-primary text-center">
+            <h1 class="text-danger text-center">
                 {% block title %}No Title{% endblock title %}
             </h1>
 

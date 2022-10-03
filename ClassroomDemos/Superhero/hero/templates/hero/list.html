@@ -15,20 +15,20 @@ List of Heroes
         <table class="table table-hover">
             <tr>
                 <th>Name</th>
-                <th>ID</th>
+                <th>Image</th>
             </tr>
 
             {% for hero in object_list %}
             <tr>
                 <td><a href="/{{ hero.pk }}">{{ hero.name }}</a></td>
-                <td>{{ hero.identity }}</td>
+                <td><img src="{{hero.image}}" alt="{{hero.name}}" width="190"></td>
             </tr>
             {% endfor %}
 
         </table>
 
         <p>
-            <a href="/add" class="btn btn-success m-5">Add New Hero</a>
+            <a href="/add" class="btn btn-danger m-5">Add New Hero</a>
         </p>
 
     </div>

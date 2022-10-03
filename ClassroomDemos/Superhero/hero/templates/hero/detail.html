@@ -24,13 +24,29 @@ Hero Details
                     <td><a href="/{{ object.pk }}/">{{ object.name }}</a></td>
                 </tr>
                 <tr>
+                    <td>Image</td>
+                    <td><img src="{{ object.image }}" alt="{{ object.image }}" width="190"></td>
+                </tr>
+                <tr>
                     <td>Identity</td>
                     <td>{{ object.identity }}</td>
+                </tr>
+                <tr>
+                    <td>Description</td>
+                    <td>{{ object.description }}</td>
+                </tr>
+                <tr>
+                    <td>Strengths</td>
+                    <td>{{ object.strengths }}</td>
+                </tr>
+                <tr>
+                    <td>Weaknesses</td>
+                    <td>{{ object.weaknesses }}</td>
                 </tr>
             </table>
 
             <p>
-                <a href="/add" class="btn btn-success m-5">Add New Hero</a>
+                <a href="/add" class="btn btn-danger m-5">Add New Hero</a>
             </p>
         </div>
 
