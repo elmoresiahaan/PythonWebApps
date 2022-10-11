@@ -1,10 +1,11 @@
 from django.db import models
 from django.urls import reverse_lazy
+from django.contrib.auth.models import User
 
 
 class Superhero(models.Model):
-    name = models.CharField(max_length=200, default="None")
-    identity = models.CharField(max_length=200, default="None")
+    name = models.CharField(max_length=200)
+    identity = models.CharField(max_length=200)
     description = models.CharField(max_length=200, default="None")
     image = models.CharField(max_length=200, default="None")
     strengths = models.CharField(max_length=200, default="None")

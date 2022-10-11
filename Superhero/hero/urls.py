@@ -1,6 +1,7 @@
 from django.urls import path, include
-from .views import HeroCreateView, HeroDeleteView, HeroDetailView, HeroListView, HeroUpdateView
+from .views import HeroCreateView, HeroDeleteView, HeroDetailView, HeroListView, HeroUpdateView, SignUpView, UserUpdateView
 from django.contrib import admin
+from django.views.generic import RedirectView
 
 urlpatterns = [
 
@@ -13,6 +14,9 @@ urlpatterns = [
 
     # Login/Logout code
     path('accounts/', include('django.contrib.auth.urls')),
+    path("accounts/signup/", SignUpView.as_view(), name="signup"),
+    path('accounts/profile/', RedirectView.as_view(url='../..')),
+
 
     # Admin views for users
     path('admin/', admin.site.urls),

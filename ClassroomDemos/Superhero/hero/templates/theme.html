@@ -29,6 +29,8 @@
         <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
         {% else %}
         <p>Welcome, new user. Please log in.</p>
+        <a href="{% url 'login' %}" class="btn btn-dark">Log In</a>
+        <a href="{% url 'signup' %}" class="btn btn-dark">Sign Up</a>
         {% endif %}</p>
     </header>
 
