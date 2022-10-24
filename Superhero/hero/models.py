@@ -16,3 +16,14 @@ class Superhero(models.Model):
 
     def get_absolute_url(self):
         return reverse_lazy('hero_list')
+
+
+class Article(models.Model):
+    title = models.CharField(max_length=100)
+    body = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse_lazy("article_list")
