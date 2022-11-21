@@ -5,6 +5,9 @@ from hero.views_accounts import UserUpdateView, UserAddView
 
 urlpatterns = [
 
+    # Message
+    path('', include('message.urls')),
+
     # Blog
     path('', include('blog.urls')),
 
